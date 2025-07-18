@@ -1,0 +1,69 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header at the top */
+header {
+  background-color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+}
+
+/* Marquee style */
+marquee {
+  color: #007acc;
+  font-weight: bold;
+}
+
+/* Navigation links inside header */
+header nav {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+header nav a {
+  color: #007acc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content (below header) */
+.mid {
+  flex: 1;
+  padding: 20px;
+}
+/* Make the header stretch full screen */
+.header {
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Prevents padding from shrinking the width */
+}
+
+/* Fix the nav bar layout */
+nav {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center; /* Or use space-around / space-between if you prefer */
+  width: 100%;
+}
